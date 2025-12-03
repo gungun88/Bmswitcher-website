@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="softTechBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6AA1FF"/> <!-- Soft Sky Blue (Lighter/Softer) -->
+      <stop offset="100%" stop-color="#165DFF"/> <!-- Arco Primary Blue -->
+    </linearGradient>
+  </defs>
+  <rect width="24" height="24" rx="6.5" fill="url(#softTechBlue)"/>
+  <g stroke="white" stroke-width="2.2" stroke-linecap="round" fill="none">
+    <!-- Streamline 1: Bottom Layer (Split to go 'under') -->
+    <!-- Starts Bottom-Left, flows to Top-Right -->
+    <path d="M4.5 16.5 C 8.5 16.5, 10.5 14.5, 11.2 13.2" opacity="0.95"/>
+    <path d="M12.8 10.8 C 13.5 9.5, 15.5 7.5, 19.5 7.5" opacity="0.95"/>
+    
+    <!-- Streamline 2: Top Layer (Continuous, flows 'over') -->
+    <!-- Starts Top-Left, flows to Bottom-Right -->
+    <path d="M4.5 7.5 C 11.5 7.5, 12.5 16.5, 19.5 16.5" />
+  </g>
+</svg>
