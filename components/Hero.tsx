@@ -2,11 +2,9 @@ import React from 'react';
 import { ChevronRight, Chrome, Send, Star } from 'lucide-react';
 import Button from './Button';
 import { useLanguage } from '../contexts/LanguageContext';
-import { useRouter } from '../contexts/RouterContext';
 
 const Hero: React.FC = () => {
   const { t } = useLanguage();
-  const { navigate } = useRouter();
 
   return (
     <section className="pt-32 pb-16 md:pt-48 md:pb-32 px-4 relative overflow-hidden">
