@@ -1,0 +1,15 @@
+services:
+  bmswitcher-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bmswitcher-web
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:38127:80"
+    networks:
+      - bmswitcher-internal
+
+networks:
+  bmswitcher-internal:
+    driver: bridge

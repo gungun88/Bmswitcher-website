@@ -1,5 +1,4 @@
 import React from 'react';
-import { Heart } from 'lucide-react';
 import Logo from './Logo';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useRouter } from '../contexts/RouterContext';
@@ -27,9 +26,6 @@ const Footer: React.FC = () => {
 
         {/* Text Content */}
         <div className="flex flex-col items-center gap-2 text-sm text-gray-400">
-           <p className="flex items-center gap-1">
-            {t('footer.madeWith')} <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500" /> {t('footer.by')}
-          </p>
           <p>
             {t('footer.copyright')}
           </p>
